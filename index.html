@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
@@ -53,10 +54,11 @@
                                         <li><a class="active" href="index.html">home</a></li>
                                         <li><a href="#about">Sobre</a></li>
                                         <li><a href="#services">Serviços</a></li>
+                                        <li><a href="#ebook">Ebook gratuito</a></li>
                                         <li><a href="#sorteios">Sorteios <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="#sorteio-harmonizacao">Harmonização na mesa radiônica</a></li>
-                                                <li><a href="#sorteio-poder-da-escolha">Curso o Poder da Escolha</a></li>
+                                                <!-- <li><a href="#sorteio-poder-da-escolha">Curso o Poder da Escolha</a></li> -->
                                             </ul>
                                         </li>                                     
                                     </ul>
@@ -100,9 +102,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
+                            <iframe aria-controls="none" width="700px" height="500px" src="https://www.youtube.com/embed/NNLCVt5V59k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <h3>
                                 <!-- Hello This is Milan -->
-                                <iframe aria-controls="none" width="800vh" height="400vh" src="https://www.youtube.com/embed/NNLCVt5V59k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </h3>
                             <!-- <span>Educando o espírito</span> -->                                                           
                             <a class="btn btn-pink btn-lg" href="#about">Saiba mais</a>
@@ -260,16 +262,56 @@
     </div>
     <!--/ sorteio harmonização -->
 
-
+    <!-- ebook -->
+    <div class="about_me" id="ebook">
+        <!-- <div class="about_large_title d-none d-lg-block">
+            Sobre mim
+        </div> -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_e_details">
+                        <h3>Ebook gratuito</h3>
+                        <p>Preencha seu nome e seu melhor e-mail nos campos abaixo, estarei lhe enviando meu ebook "Diário de co-criação" gratuitamente.
+                        </p>
+                        <div class="input-group mb-3">
+                            <input id="name" type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="download_cv text-center">                                    
+                                    <a id="btn-download" target="_blank" class="boxed-btn4" href="https://firebasestorage.googleapis.com/v0/b/aline-site-a030b.appspot.com/o/Di%C3%A1rio%20de%20co-cria%C3%A7%C3%A3o.pdf?alt=media&token=280e1072-8653-456c-88f3-5e79254e8bff">
+                                        Baixar ebook
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_img">
+                        <div class="color_pattern d-none d-lg-block">
+                            <img src="img/about/color_grid.png" alt="">
+                        </div>
+                        <div class="my_Pic ">
+                            <img src="img/portfolio/ebook2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ebook -->
 
     <!-- sorteio poder da escolha -->
-    <div class="portfolio_area portfolio_bg_1 pt-5 pb-5" id='sorteio-poder-da-escolha'>
+    <!-- <div class="portfolio_area portfolio_bg_1 pt-5 pb-5" id='sorteio-poder-da-escolha'>
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <!-- <h3 class="f-5 text-white">Concorra ao sorteio de 3 harmonizações na mesa radiônica</h3> -->
-                    <div class=" white_text text-center">
-                        <!-- <span>Portfolios</span> -->
+                <div class="col-xl-12">                    
+                    <div class=" white_text text-center">                      
                         <h3 class="f-2-5 text-white mb-5">Concorra ao sorteio de 3 acessos ao curso O Poder da Escolha</h3>
                     </div>
                 </div>
@@ -308,7 +350,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--/ sorteio poder da escolha -->
     
 <!-- 
@@ -426,13 +468,13 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-md-6">
-                        <div class="menu_links">
+                        <!-- <div class="menu_links">
                             <ul>
                                 <li><a href="#about">Sobre</a></li>
                                 <li><a href="#services">Serviços</a></li>
                                 <li><a href="#sorteios">Sorteios</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-xl-6 col-md-6">
                         <div class="socail_links">
@@ -496,8 +538,79 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAm8uswD3e9qng1cp-6yFCsW-sPYq66N_M",
+            authDomain: "aline-site-a030b.firebaseapp.com",
+            databaseURL: "https://aline-site-a030b.firebaseio.com",
+            projectId: "aline-site-a030b",
+            storageBucket: "aline-site-a030b.appspot.com",
+            messagingSenderId: "199655498098",
+            appId: "1:199655498098:web:ce63ee2a59053f90173deb",
+            measurementId: "G-4SM6CR8QM7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script>
+        function validateEmail(email) {
+                const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+
+        var nameField = document.getElementById('name')
+        var emailField = document.getElementById('email')
+        var btnSend = document.getElementById('btn-download')
+
+        const database = firebase.database();
+        const leads = database.ref('leads');
+
+        btnSend.setAttribute("hidden","hidden")
+
+        $('#email').on('input',function(evt){           
+            if(validateEmail(emailField.value)){
+                if(btnSend.getAttribute("hidden")){
+                    btnSend.removeAttribute("hidden")
+                }
+            } else{
+                if (btnSend.getAttribute("hidden")==null) {
+                    btnSend.setAttribute("hidden", "hidden")
+                }
+            }           
+        })
+        
+        $('#btn-download').on('click', function(evt){           
+            var name = nameField.value
+            var email = emailField.value            
+            if (btnSend.getAttribute("hidden") == null) {
+                btnSend.setAttribute("hidden", "hidden")
+            }             
+            const autoId = leads.push().key 
+            leads.child(autoId).set({
+                name:  name,
+                email: email
+            })       
+        })
+        
+
+
+    </script>
 </body>
 
 </html>
